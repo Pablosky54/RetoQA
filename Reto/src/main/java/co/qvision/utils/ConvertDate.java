@@ -39,4 +39,11 @@ public class ConvertDate {
 		return daysBetween;
 	}
 
+	private ConvertDate() {
+		super();
+		
+	}
+	
+	
+
 }
