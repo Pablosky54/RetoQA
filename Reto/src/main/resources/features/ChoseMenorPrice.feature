@@ -6,7 +6,7 @@ Feature: Chose a most sheap trip
   
   Scenario: Carolina chose a most cheap option a trip
     Given "Carolina" open page
-    When she chose options destination, Las Vegas and init "3/16/2020" until "3/20/2020"    
-    Then she verify the total price is 360 
+    When she chose options destination, Las Vegas and init "12/12/2021" until "12/20/2021"    
+    Then she verify the total price is 720 
 
   
