@@ -33,6 +33,9 @@ public class HomePage extends PageObject{
 	public static final Target BOTTON_SEARCH = Target.the("Botton start of search in home page")
             .located(By.xpath("//div//span[contains(text(),'SEARCH')]"));
 	
+	public static final Target PRICE = Target.the("Total price in page")
+            .located(By.xpath("//div[@class='sum']//h4[@class='total-price']"));
+	
 	
 	
 

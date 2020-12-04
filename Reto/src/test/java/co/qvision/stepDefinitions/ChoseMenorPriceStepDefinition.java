@@ -41,10 +41,10 @@ public class ChoseMenorPriceStepDefinition {
 	   
 	}
 
-	@Then("^she verify the total price is (.*)$")
-	public void sheVerifyThePriceInPage(float totalPrice){
+	@Then("^she verify the total price")
+	public void sheVerifyThePriceInPage(){
 		
-		theActorInTheSpotlight().should(seeThat(ValidatePrice.is(totalPrice)));
+		theActorInTheSpotlight().should(seeThat(ValidatePrice.is(HomePage.PRICE)));
 	   
 	}
 
