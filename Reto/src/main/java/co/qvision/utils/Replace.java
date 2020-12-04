@@ -11,13 +11,13 @@ public class Replace {
 	
 	public static Replace newIntance() {
 		
-		Replace remplace = new Replace();
-		return remplace;
+		
+		return new Replace();
 	}
 	
 	
 	
-	public Replace() {}
+	
 
 	public static List<Integer> change(Target target, Actor actor) {
 		List<Integer> list = new ArrayList<>();
@@ -28,5 +28,15 @@ public class Replace {
 		
 		return list;
 	}
+
+
+
+
+
+	private Replace() {
+		super();
+			}
+	
+	
 
 }

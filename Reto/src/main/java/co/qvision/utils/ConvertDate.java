@@ -3,18 +3,15 @@ package co.qvision.utils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ConvertDate {
-
-	public ConvertDate() {
-	}
+	
 
 	private static final Logger LOGGER = Logger.getLogger("");
 
-	private static Date ParseDate(String date) {
+	private static Date parseDate(String date) {
 		SimpleDateFormat format = new SimpleDateFormat("mm/dd/yyyy");
 		Date dateOut = null;
 		try {
@@ -30,8 +27,8 @@ public class ConvertDate {
 		float daysBetween = 0;
 
 		try {
-			Date dateBefore = ConvertDate.ParseDate(checkIn);
-			Date dateAfter = ConvertDate.ParseDate(checkOut);
+			Date dateBefore = ConvertDate.parseDate(checkIn);
+			Date dateAfter = ConvertDate.parseDate(checkOut);
 			long difference = dateAfter.getTime() - dateBefore.getTime();
 			daysBetween = (difference / (1000 * 60 * 60 * 24));
 

@@ -27,8 +27,8 @@ public class ComparePrice implements Task {
 			}
 
 	public ComparePrice newIntance(){		
-		ComparePrice compaire = new ComparePrice();
-		return compaire;
+		
+		return new ComparePrice();
 		
 	}
 
